@@ -6,7 +6,7 @@ namespace App\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-final class HomeControllerTest extends WebTestCase
+final class FrontControllerTest extends WebTestCase
 {
     public function testHomepage(): void
     {
@@ -15,5 +15,14 @@ final class HomeControllerTest extends WebTestCase
 
         $this->assertResponseIsSuccessful();
         $this->assertSelectorTextContains('h1', 'Hello from Symfony!👋');
+    }
+
+    public function testAboutpage(): void
+    {
+        $client = static::createClient();
+        $client->request('GET', '/about');
+
+        $this->assertResponseIsSuccessful();
+        $this->assertSelectorTextContains('h1', 'About');
     }
 }
