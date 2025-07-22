@@ -36,4 +36,4 @@ jobs:
 
       # —— Tests ✅ ———————————————————————————————————————————————————————————
       - name: Run phpunit
-        run: SYMFONY_DEPRECATIONS_HELPER=disabled bin/phpunit
+        run: vendor/bin/phpunit
