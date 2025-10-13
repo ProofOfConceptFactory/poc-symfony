@@ -13,5 +13,8 @@
   "branchPrefix": "renovate/",
   "additionalBranchPrefix": "{{{newVersion}}}-",
   "branchTopic": "{{{depName}}}",
-  "commitMessageExtra": "to v{{{newVersion}}}"
+  "commitMessageExtra": "to v{{{newVersion}}}",
+  "patch": {
+    "enabled": false
+  }
 }
