@@ -1,4 +1,4 @@
-#syntax=docker/dockerfile:1.26
+#syntax=docker/dockerfile:1.27
 
 # Versions
 FROM dunglas/frankenphp:1-php8.4 AS frankenphp_upstream
